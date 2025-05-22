@@ -1,0 +1,141 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.btn-container{
+    text-align: center;
+}
+.btn{
+    padding: 14px 18px 14px 18px;
+    color: rgb(255, 255, 255);
+font-family: Work Sans;
+font-size: 12px;
+font-weight: 600;
+line-height: 16px;
+letter-spacing: 0%;
+text-align: center;
+
+border-radius: 8px;
+
+background: rgb(82, 195, 3);
+border: none;
+cursor: pointer;
+}
+
+#hero{
+    height: 735px;
+    background-image:linear-gradient(0deg, rgb(9, 9, 9) 3.482%,rgba(16, 16, 16, 0) 101.632%), url("../Food_Resturant_Project/assets/hero-bg.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.hero-content{
+    width: 818px;
+    margin: 0 auto;
+}
+.subtitle{
+    color: rgb(255, 255, 255);
+font-family: Work Sans;
+font-size: 20px;
+font-weight: 600;
+line-height: 38px;
+letter-spacing: 0%;
+text-align: center;
+opacity: 0.8;
+margin-bottom: 10px;
+
+
+}
+
+
+.subtitle1{
+    color: rgb(1, 0, 0);
+font-family: Work Sans;
+font-size: 20px;
+font-weight: 600;
+line-height: 38px;
+letter-spacing: 0%;
+text-align: center;
+opacity: 0.8;
+margin-bottom: 10px;
+}
+
+
+.title{
+    color: rgb(255, 255, 255);
+font-family: Work Sans;
+font-size: 36px;
+font-weight: 700;
+line-height: 50px;
+letter-spacing: 0%;
+text-align: center;
+margin-bottom: 14px;
+}
+.title1{
+    color: rgb(18, 1, 1);
+font-family: Work Sans;
+font-size: 36px;
+font-weight: 700;
+line-height: 50px;
+letter-spacing: 0%;
+text-align: center;
+margin-bottom: 14px;
+}
+.description{
+    color: rgb(255, 255, 255);
+font-family: Work Sans;
+font-size: 10px;
+font-weight: 500;
+line-height: 16px;
+letter-spacing: 0%;
+text-align: center;
+opacity: 0.7;
+margin-bottom: 32px;
+
+}
+
+.card-box{
+    width: 1056px;
+    margin: 50px auto;
+}
+.card-container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+.card{
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card.image-box{
+    width: 250px;
+}
+
+.card.image-box img{
+    width: 100%;
+}
+.card.shop{
+    background-color: aqua;
+    text-align: center;
+    padding: 10px 18px 10px 18px;
+
+    border-radius: 8px;
+
+background: rgba(82, 195, 3, 0.15);
+
+}
