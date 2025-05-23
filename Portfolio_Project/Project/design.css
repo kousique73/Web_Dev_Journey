@@ -1,0 +1,266 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    margin-bottom: 40px;
+}
+
+.logo {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: #ff6f00;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-hire {
+    background-color: #ff6f00;
+    color: #fff;
+    border: 2px solid #ff6f00;
+}
+
+.btn-hire:hover {
+    background-color: #e66000;
+    color: #fff;
+}
+
+/* Hero Section Styles */
+.hero-section {
+    display: flex;
+    align-items: center;
+    position: relative;
+    min-height: 70vh;
+}
+
+/* Styles for the developer sidebar image */
+.developer-sidebar-image {
+    position: absolute;
+    left: -40px; /* Adjust to position it partly off-screen or on the edge */
+    top: 50%;
+    transform: translateY(-50%);
+    height: 300px; /* Adjust height as needed */
+    width: auto; /* Maintain aspect ratio */
+    /* If your image is not already vertical, you might need:
+    transform: translateY(-50%) rotate(-90deg);
+    transform-origin: top left;
+    left: 20px;
+    top: calc(50% + 150px); /* Adjust based on half of the new width after rotation */
+    /* The exact rotation and positioning will depend on the image's original orientation and dimensions */
+}
+
+
+.hero-content {
+    flex: 1;
+    padding-right: 40px;
+    /* Add some padding to the left so it doesn't overlap with the new image if needed */
+    padding-left: 60px; /* Adjust this based on the width and position of your developer image */
+    max-width: 50%;
+    z-index: 2;
+}
+
+.greeting {
+    font-size: 1.5em;
+    color: #555;
+    margin-bottom: 0px;
+}
+
+.hero-content h1 {
+    font-size: 4.5em;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    color: #000;
+    line-height: 1.1;
+}
+
+.intro-text {
+    font-size: 1em;
+    color: #777;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    max-width: 450px;
+}
+
+.hero-buttons .btn {
+    margin-right: 15px;
+    font-size: 1em;
+}
+
+.btn-download {
+    background-color: #ff6f00;
+    color: #fff;
+    border: 2px solid #ff6f00;
+}
+
+.btn-download:hover {
+    background-color: #e66000;
+    color: #fff;
+}
+
+.btn-contact {
+    background-color: #fff;
+    color: #ff6f00;
+    border: 2px solid #ff6f00;
+}
+
+.btn-contact:hover {
+    background-color: #ff6f00;
+    color: #fff;
+}
+
+/* Hero Image Area Styles */
+.hero-image-area {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 400px;
+    max-width: 50%;
+}
+
+.main-image {
+    max-width: 75%;
+    height: auto;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.background-shade {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150%;
+    height: auto;
+    z-index: 0;
+    opacity: 0.7;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .developer-sidebar-image {
+        /* Option 1: Hide it on smaller screens */
+        /* display: none; */
+
+        /* Option 2: Reposition it if needed */
+        position: static; /* Or relative, depending on desired flow */
+        transform: none;
+        height: auto; /* Or a specific height */
+        width: 150px; /* Example width */
+        margin: 0 auto 20px auto; /* Center it if static */
+        order: 0; /* Control order if flex parent is still active in this view */
+    }
+
+    .hero-content {
+        padding-right: 0;
+        padding-left: 0; /* Reset padding for smaller screens */
+        padding-bottom: 30px;
+        max-width: 100%;
+        order: 2;
+    }
+
+    .hero-image-area {
+        max-width: 80%;
+        margin: 0 auto 30px auto;
+        order: 1;
+    }
+
+    .main-image {
+        max-width: 100%;
+    }
+
+    .background-shade {
+        width: 130%;
+    }
+
+    .hero-content h1 {
+        font-size: 3em;
+    }
+
+    .greeting {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        margin-top: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 5px 10px;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+
+    .developer-sidebar-image {
+        width: 120px; /* Further adjust for very small screens */
+    }
+}
